@@ -1,17 +1,7 @@
-DEBUG=True
-SECRET_KEY=change-me-please
-ALLOWED_HOSTS=127.0.0.1,localhost
-
-# MySQL
-MYSQL_DATABASE=alx_travel
-MYSQL_USER=alx_user
-MYSQL_PASSWORD=alx_pass
-MYSQL_HOST=127.0.0.1
-MYSQL_PORT=3306
-
-# Celery / RabbitMQ
-CELERY_BROKER_URL=amqp://alx:alxpass@127.0.0.1:5672//
-CELERY_RESULT_BACKEND=rpc://
-
-# CORS (dev)
-CORS_ALLOW_ALL_ORIGINS=True
+Django>=5.0,<6
+djangorestframework>=3.15
+django-cors-headers>=4.4
+drf-yasg>=1.21
+celery>=5.3
+django-environ>=0.11
+mysqlclient>=2.2
